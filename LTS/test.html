@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Manufacturers Directory</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #eaeaea;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+        }
+
+        .region-section {
+            margin-bottom: 40px;
+        }
+
+        .region-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #00d4ff;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 4px solid #00d4ff;
+        }
+
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .car-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #eaeaea;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100px;
+        }
+
+        .car-card:hover {
+            background: rgba(0, 212, 255, 0.1);
+            border-color: #00d4ff;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+        }
+
+        .car-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .car-country {
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .car-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Car Manufacturers Directory</h1>
+            <p>Direct links to official websites of major automobile companies worldwide</p>
+        </header>
+
+        <!-- American -->
+        <div class="region-section">
+            <h2 class="region-title">American</h2>
+            <div class="car-grid">
+                <a href="https://www.ford.com" target="_blank" class="car-card">
+                    <div class="car-name">Ford</div>
+                    <div class="car-country">USA</div>
+                </a>
+                <a href="https://www.gm.com" target="_blank" class="car-card">
+                    <div class="car-name">General Motors</div>
+                    <div class="car-country">USA</div>
+                </a>
+                <a href="https://www.tesla.com" target="_blank" class="car-card">
+                    <div class="car-name">Tesla</div>
+                    <div class="car-country">USA</div>
+                </a>
+                <a href="https://www.stellantis.com" target="_blank" class="car-card">
+                    <div class="car-name">Stellantis</div>
+                    <div class="car-country">USA / Netherlands</div>
+                </a>
+                <a href="https://www.jeep.com" target="_blank" class="car-card">
+                    <div class="car-name">Jeep</div>
+                    <div class="car-country">USA</div>
+                </a>
+                <a href="https://www.dodge.com" target="_blank" class="car-card">
+                    <div class="car-name">Dodge</div>
+                    <div class="car-country">USA</div>
+                </a>
+                <a href="https://www.chevrolet.com" target="_blank" class="car-card">
+                    <div class="car-name">Chevrolet</div>
+                    <div class="car-country">USA</div>
+                </a>
+                <a href="https://www.cadillac.com" target="_blank" class="car-card">
+                    <div class="car-name">Cadillac</div>
+                    <div class="car-country">USA</div>
+                </a>
+                <a href="https://www.lincoln.com" target="_blank" class="car-card">
+                    <div class="car-name">Lincoln</div>
+                    <div class="car-country">USA</div>
+                </a>
+                <a href="https://www.rivian.com" target="_blank" class="car-card">
+                    <div class="car-name">Rivian</div>
+                    <div class="car-country">USA</div>
+                </a>
+                <a href="https://www.lucidmotors.com" target="_blank" class="car-card">
+                    <div class="car-name">Lucid Motors</div>
+                    <div class="car-country">USA</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- German -->
+        <div class="region-section">
+            <h2 class="region-title">German</h2>
+            <div class="car-grid">
+                <a href="https://www.bmw.com" target="_blank" class="car-card">
+                    <div class="car-name">BMW</div>
+                    <div class="car-country">Germany</div>
+                </a>
+                <a href="https://www.mercedes-benz.com" target="_blank" class="car-card">
+                    <div class="car-name">Mercedes-Benz</div>
+                    <div class="car-country">Germany</div>
+                </a>
+                <a href="https://www.audi.com" target="_blank" class="car-card">
+                    <div class="car-name">Audi</div>
+                    <div class="car-country">Germany</div>
+                </a>
+                <a href="https://www.volkswagen.com" target="_blank" class="car-card">
+                    <div class="car-name">Volkswagen</div>
+                    <div class="car-country">Germany</div>
+                </a>
+                <a href="https://www.porsche.com" target="_blank" class="car-card">
+                    <div class="car-name">Porsche</div>
+                    <div class="car-country">Germany</div>
+                </a>
+                <a href="https://www.opel.com" target="_blank" class="car-card">
+                    <div class="car-name">Opel</div>
+                    <div class="car-country">Germany</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Japanese -->
+        <div class="region-section">
+            <h2 class="region-title">Japanese</h2>
+            <div class="car-grid">
+                <a href="https://www.toyota.com" target="_blank" class="car-card">
+                    <div class="car-name">Toyota</div>
+                    <div class="car-country">Japan</div>
+                </a>
+                <a href="https://www.honda.com" target="_blank" class="car-card">
+                    <div class="car-name">Honda</div>
+                    <div class="car-country">Japan</div>
+                </a>
+                <a href="https://www.nissan-global.com" target="_blank" class="car-card">
+                    <div class="car-name">Nissan</div>
+                    <div class="car-country">Japan</div>
+                </a>
+                <a href="https://www.mazda.com" target="_blank" class="car-card">
+                    <div class="car-name">Mazda</div>
+                    <div class="car-country">Japan</div>
+                </a>
+                <a href="https://www.subaru.com" target="_blank" class="car-card">
+                    <div class="car-name">Subaru</div>
+                    <div class="car-country">Japan</div>
+                </a>
+                <a href="https://www.mitsubishi-motors.com" target="_blank" class="car-card">
+                    <div class="car-name">Mitsubishi</div>
+                    <div class="car-country">Japan</div>
+                </a>
+                <a href="https://www.suzuki.com" target="_blank" class="car-card">
+                    <div class="car-name">Suzuki</div>
+                    <div class="car-country">Japan</div>
+                </a>
+                <a href="https://www.lexus.com" target="_blank" class="car-card">
+                    <div class="car-name">Lexus</div>
+                    <div class="car-country">Japan</div>
+                </a>
+                <a href="https://www.infiniti.com" target="_blank" class="car-card">
+                    <div class="car-name">Infiniti</div>
+                    <div class="car-country">Japan</div>
+                </a>
+                <a href="https://www.acura.com" target="_blank" class="car-card">
+                    <div class="car-name">Acura</div>
+                    <div class="car-country">Japan</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Korean -->
+        <div class="region-section">
+            <h2 class="region-title">Korean</h2>
+            <div class="car-grid">
+                <a href="https://www.hyundai.com" target="_blank" class="car-card">
+                    <div class="car-name">Hyundai</div>
+                    <div class="car-country">South Korea</div>
+                </a>
+                <a href="https://www.kia.com" target="_blank" class="car-card">
+                    <div class="car-name">Kia</div>
+                    <div class="car-country">South Korea</div>
+                </a>
+                <a href="https://www.genesis.com" target="_blank" class="car-card">
+                    <div class="car-name">Genesis</div>
+                    <div class="car-country">South Korea</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Italian -->
+        <div class="region-section">
+            <h2 class="region-title">Italian</h2>
+            <div class="car-grid">
+                <a href="https://www.ferrari.com" target="_blank" class="car-card">
+                    <div class="car-name">Ferrari</div>
+                    <div class="car-country">Italy</div>
+                </a>
+                <a href="https://www.lamborghini.com" target="_blank" class="car-card">
+                    <div class="car-name">Lamborghini</div>
+                    <div class="car-country">Italy</div>
+                </a>
+                <a href="https://www.maserati.com" target="_blank" class="car-card">
+                    <div class="car-name">Maserati</div>
+                    <div class="car-country">Italy</div>
+                </a>
+                <a href="https://www.fiat.com" target="_blank" class="car-card">
+                    <div class="car-name">Fiat</div>
+                    <div class="car-country">Italy</div>
+                </a>
+                <a href="https://www.alfaromeo.com" target="_blank" class="car-card">
+                    <div class="car-name">Alfa Romeo</div>
+                    <div class="car-country">Italy</div>
+                </a>
+                <a href="https://www.pagani.com" target="_blank" class="car-card">
+                    <div class="car-name">Pagani</div>
+                    <div class="car-country">Italy</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- British -->
+        <div class="region-section">
+            <h2 class="region-title">British</h2>
+            <div class="car-grid">
+                <a href="https://www.jaguar.com" target="_blank" class="car-card">
+                    <div class="car-name">Jaguar</div>
+                    <div class="car-country">UK</div>
+                </a>
+                <a href="https://www.landrover.com" target="_blank" class="car-card">
+                    <div class="car-name">Land Rover</div>
+                    <div class="car-country">UK</div>
+                </a>
+                <a href="https://www.astonmartin.com" target="_blank" class="car-card">
+                    <div class="car-name">Aston Martin</div>
+                    <div class="car-country">UK</div>
+                </a>
+                <a href="https://www.mclaren.com" target="_blank" class="car-card">
+                    <div class="car-name">McLaren</div>
+                    <div class="car-country">UK</div>
+                </a>
+                <a href="https://www.rolls-roycemotorcars.com" target="_blank" class="car-card">
+                    <div class="car-name">Rolls-Royce</div>
+                    <div class="car-country">UK</div>
+                </a>
+                <a href="https://www.bentleymotors.com" target="_blank" class="car-card">
+                    <div class="car-name">Bentley</div>
+                    <div class="car-country">UK</div>
+                </a>
+                <a href="https://www.lotuscars.com" target="_blank" class="car-card">
+                    <div class="car-name">Lotus</div>
+                    <div class="car-country">UK</div>
+                </a>
+                <a href="https://www.morgan-motor.com" target="_blank" class="car-card">
+                    <div class="car-name">Morgan</div>
+                    <div class="car-country">UK</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Swedish -->
+        <div class="region-section">
+            <h2 class="region-title">Swedish</h2>
+            <div class="car-grid">
+                <a href="https://www.volvocars.com" target="_blank" class="car-card">
+                    <div class="car-name">Volvo</div>
+                    <div class="car-country">Sweden</div>
+                </a>
+                <a href="https://www.polestar.com" target="_blank" class="car-card">
+                    <div class="car-name">Polestar</div>
+                    <div class="car-country">Sweden</div>
+                </a>
+                <a href="https://www.koenigsegg.com" target="_blank" class="car-card">
+                    <div class="car-name">Koenigsegg</div>
+                    <div class="car-country">Sweden</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- French -->
+        <div class="region-section">
+            <h2 class="region-title">French</h2>
+            <div class="car-grid">
+                <a href="https://www.renault.com" target="_blank" class="car-card">
+                    <div class="car-name">Renault</div>
+                    <div class="car-country">France</div>
+                </a>
+                <a href="https://www.peugeot.com" target="_blank" class="car-card">
+                    <div class="car-name">Peugeot</div>
+                    <div class="car-country">France</div>
+                </a>
+                <a href="https://www.citroen.com" target="_blank" class="car-card">
+                    <div class="car-name">Citroën</div>
+                    <div class="car-country">France</div>
+                </a>
+                <a href="https://www.dsautomobiles.com" target="_blank" class="car-card">
+                    <div class="car-name">DS Automobiles</div>
+                    <div class="car-country">France</div>
+                </a>
+                <a href="https://www.alpine-cars.com" target="_blank" class="car-card">
+                    <div class="car-name">Alpine</div>
+                    <div class="car-country">France</div>
+                </a>
+                <a href="https://www.bugatti.com" target="_blank" class="car-card">
+                    <div class="car-name">Bugatti</div>
+                    <div class="car-country">France</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Chinese -->
+        <div class="region-section">
+            <h2 class="region-title">Chinese</h2>
+            <div class="car-grid">
+                <a href="https://www.byd.com" target="_blank" class="car-card">
+                    <div class="car-name">BYD</div>
+                    <div class="car-country">China</div>
+                </a>
+                <a href="https://www.nio.com" target="_blank" class="car-card">
+                    <div class="car-name">NIO</div>
+                    <div class="car-country">China</div>
+                </a>
+                <a href="https://www.xpeng.com" target="_blank" class="car-card">
+                    <div class="car-name">XPeng</div>
+                    <div class="car-country">China</div>
+                </a>
+                <a href="https://www.liauto.com" target="_blank" class="car-card">
+                    <div class="car-name">Li Auto</div>
+                    <div class="car-country">China</div>
+                </a>
+                <a href="https://www.geely.com" target="_blank" class="car-card">
+                    <div class="car-name">Geely</div>
+                    <div class="car-country">China</div>
+                </a>
+                <a href="https://www.gwm.com.cn" target="_blank" class="car-card">
+                    <div class="car-name">Great Wall Motor</div>
+                    <div class="car-country">China</div>
+                </a>
+                <a href="https://www.chery.cn" target="_blank" class="car-card">
+                    <div class="car-name">Chery</div>
+                    <div class="car-country">China</div>
+                </a>
+                <a href="https://www.saicmotor.com" target="_blank" class="car-card">
+                    <div class="car-name">SAIC Motor</div>
+                    <div class="car-country">China</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Other -->
+        <div class="region-section">
+            <h2 class="region-title">Other</h2>
+            <div class="car-grid">
+                <a href="https://www.seat.com" target="_blank" class="car-card">
+                    <div class="car-name">SEAT</div>
+                    <div class="car-country">Spain</div>
+                </a>
+                <a href="https://www.skoda-auto.com" target="_blank" class="car-card">
+                    <div class="car-name">Škoda</div>
+                    <div class="car-country">Czech Republic</div>
+                </a>
+                <a href="https://www.dacia.ro" target="_blank" class="car-card">
+                    <div class="car-name">Dacia</div>
+                    <div class="car-country">Romania</div>
+                </a>
+                <a href="https://www.tatamotors.com" target="_blank" class="car-card">
+                    <div class="car-name">Tata Motors</div>
+                    <div class="car-country">India</div>
+                </a>
+                <a href="https://www.mahindra.com" target="_blank" class="car-card">
+                    <div class="car-name">Mahindra</div>
+                    <div class="car-country">India</div>
+                </a>
+                <a href="https://www.proton.com" target="_blank" class="car-card">
+                    <div class="car-name">Proton</div>
+                    <div class="car-country">Malaysia</div>
+                </a>
+                <a href="https://www.perodua.com.my" target="_blank" class="car-card">
+                    <div class="car-name">Perodua</div>
+                    <div class="car-country">Malaysia</div>
+                </a>
+                <a href="https://www.vinfastauto.com" target="_blank" class="car-card">
+                    <div class="car-name">VinFast</div>
+                    <div class="car-country">Vietnam</div>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Car Manufacturers Directory &mdash; All links open in new tabs</p>
+        </footer>
+    </div>
+</body>
+</html>
