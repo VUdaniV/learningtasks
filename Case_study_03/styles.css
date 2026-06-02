@@ -1,0 +1,32 @@
+body
+{
+    background-color: #2daa56;
+}
+#wrapper
+{
+    border: 1px solid #000;
+    background-color: rgb(255, 255, 255);
+    min-height: 100%;
+    margin: 5px;
+}
+.header
+{
+    border: 1px solid #000;
+    background-color: #47ca39;
+    height: 300px;
+}
+.main-navigation
+{
+    text-align: center;
+    background-color: #175321;
+    height: 70px;
+}
+.main-navigation a
+{
+color: aliceblue;
+text-decoration: underline;
+}
+.main-navigation a:hover
+{
+text-align: center;
+}
