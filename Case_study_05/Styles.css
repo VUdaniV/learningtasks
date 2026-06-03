@@ -1,0 +1,49 @@
+body
+{
+    background-color: #000000;
+}
+#wrapper
+{
+    border: 1px solid #000;
+    background-color: rgb(163, 47, 38);
+    min-height: 100%;
+    margin: 5px;
+}
+.header
+{
+    border: 1px solid #000;
+    background-color: #000000;
+    height: 300px;
+}
+.main-navigation
+{
+    text-align: center;
+    background-color: #000000;
+    height: 70px;
+}
+.main-navigation a
+{
+color: aliceblue;
+text-decoration: underline;
+}
+.main-navigation a:hover
+{
+text-align: center;
+}
+.left-box{
+    background-color: orange;
+    padding: 20px;
+    margin-top: 3px;
+    float: left;
+    border: 2px solid;
+    width: 30.9%;
+    height: 250px;
+    text-align: center;
+}
+.footer-box{
+background-color: black;
+color: white;
+text-align: center;
+padding: 10px;
+margin-top: 20px;
+}
