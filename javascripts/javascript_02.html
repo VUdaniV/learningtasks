@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript 02</title>
+        <script>
+            alert("You Click Refresh or reloaded the page!");
+            // let name = prompt("What is your name?");
+            // alert("Hello, " + name + "!");
+            // let firstnum = prompt("Enter the first number:");
+           // let secondnum = prompt("Enter the second number:");
+
+            // let sum = parseFloat(firstnum) + parseFloat(secondnum);
+
+            // alert("The sum is: " + sum);
+            function ClickMe() {
+                let firstname = prompt ("Enter 1st Number:");
+                let secondname = prompt ("Enter 2nd Number:");
+                let sum = parseFloat(firstname) + parseFloat(secondname);
+
+                alert("The sum is: " + sum);
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="ClickMe()">Click me to add 2 numbers</button>
+    </body>
+</html>
